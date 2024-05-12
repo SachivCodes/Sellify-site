@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="payment.css">
+  </head>
+  <body>
+    <button id="cart-button">Cart</button>
+    <div class="container">
+      <div class="cart-item">
+        <div class="cart-header">
+          <h4>Product Name</h4>
+        </div>
+        <div class="product-details">
+          <img src="product17.jpg" alt="Product 1">
+          <p>Description of the product...
+            best selling book of the time ...
+            Demand in site for cooks
+            Must read for new Chefs..!!!
+          </p>
+        </div>
+        <div class="counter">
+          <button class="minus-btn">-</button>
+          <span class="quantity">1</span>
+          <button class="plus-btn">+</button>
+        </div>
+        <div class="product-price">$100</div>
+      </div>
+      <div class="cart-item">
+        <div class="cart-header">
+          <h4>Product Name</h4>
+        </div>
+        <div class="product-details">
+          <img src="product18.jpg" alt="Product 2">
+          <p>Description of the product...
+            sci-fi book and related to the tech world..
+            interest seeker and best seller..!!
+          </p>
+        </div>
+        <div class="counter">
+          <button class="minus-btn">-</button>
+          <span class="quantity">1</span>
+          <button class="plus-btn">+</button>
+        </div>
+        <div class="product-price">$100</div>
+      </div>
+      <div class="cart-item">
+        <div class="cart-header">
+          <h4>Product Name</h4>
+        </div>
+        <div class="product-details">
+          <img src="product19.jpg" alt="Product 3">
+          <p>Description of the product...
+            romantic novel for readers that romanticise the living aspect of life
+          </p>
+        </div>
+        <div class="counter">
+          <button class="minus-btn">-</button>
+          <span class="quantity">1</span>
+          <button class="plus-btn">+</button>
+        </div>
+        <div class="product-price">$100</div>
+      </div>
+      <div class="cart-item">
+        <div class="cart-header">
+          <h4>Product Name</h4>
+        </div>
+        <div class="product-details">
+          <img src="product20.jpg" alt="Product 4">
+          <p>Description of the product...
+            abc rhyme book for children ..
+            contains picture reading for active learning..!!
+
+          </p>
+        </div>
+        <div class="counter">
+          <button class="minus-btn">-</button>
+          <span class="quantity">1</span>
+          <button class="plus-btn">+</button>
+        </div>
+        <div class="product-price">$100</div> 
+      </div>
+      <div class="cart-total">
+        <div class="cart-total-header">
+          <h4>Total:</h4>
+        </div>
+        <div class="cart-total-price">$500</div>
+      </div>
+      <div class="cart-checkout">
+        <button class="pay-now-btn" onclick="openpay()">Pay Now</button>
+        
+      </div>
+    </div>
+    <script>
+        function openpay() {
+            alert('Payment SUCCESSFUL!!');
+            window.location.href = 'razorpay.html';
+        }
+    </script>
+    <script src="payment.js"></script>
+    <script>
+      const cartButton = document.getElementById('cart-button');
+      const container = document.querySelector('.container');
+
+      cartButton.addEventListener('click', () => {
+        container.style.display = 'block';
+      });
+    </script>
+  </body>
+</html>

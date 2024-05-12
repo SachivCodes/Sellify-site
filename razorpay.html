@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="razorpay.css">
+  <link rel="stylesheet" href="razorpay1.html">
+  <link rel="stylesheet" href="payment.html">
+ 
+
+</head>
+<body>
+  <div class="container">
+    <a href="IP.html"><img src="logo.jpg" height="90px" width="90px" ></a> 
+    <form action="/search" method="get" class="search-form">
+        <input type="text" name="search" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+
+  <button type="button" class="sign-in-button" onclick="openSignInPage()">Sign In</button> &nbsp;
+  <button class="cart-button" onclick="openCart()">Cart</button>
+
+<script>
+    // JavaScript code
+    function openCart() {
+        window.location.href = "payment.html"; 
+        // Add functionality to toggle the cart (e.g., show/hide the cart content)
+    }
+</script>
+
+  <script>
+    function openSignInPage() {
+        window.location.href = "razorpay1.html"; 
+    }
+</script>
+</div>
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</div>
+<div class="background-image"></div>
+<br>
+<br>
+<div class="image"></div>
+<h1><button class="store" onclick="openMedicine()">Medicine</button>
+</h1>
+<br><br>
+<div class="image2"></div><h1><h1><button class="store" onclick="openElectronics()">Electronics</button></h1><br><br>
+<div class="image3"></div><h1><h1><button class="store" onclick="openCosmetics()">Cosmetics</button></h1><br><br>
+<div class="image4"></div><h1><h1><button class="store" onclick="openGrocery()">Food & Grocery</button></h1><br><br>
+<div class="image5"></div><h1><h1><button class="store" onclick="openBooks()">Books</button></h1><br><br>
+<script>
+    function openElectronics() {
+        window.location.href = "Electronics.html"; 
+    }
+</script>
+<script>
+    function openMedicine() {
+        window.location.href = "payment.html"; 
+    }
+</script>
+<script>
+    function openCosmetics() {
+        window.location.href = "Cosmetics.html"; 
+    }
+</script>
+<script>
+    function openBooks() {
+        window.location.href = "Books.html"; 
+    }
+</script>
+<script>
+    function openGrocery() {
+        window.location.href = "Grocery.html"; 
+    }
+</script>
+<footer class="footer-panel">
+  <div class="footer-content">
+      <h2>Contact Us</h2>
+      <p>Email: sellify@gmail.com</p>
+      <p>Phone: +123456789</p> /
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="payment.css">
+  </head>
+  <body>
+ <div class="cart-checkout">
+        <button class="pay-now-btn" onclick="openpay()">Pay Now</button>
+      </div>
+    </div>
+    <script>
+        function openpay() {
+            window.location.href = "click.html"; 
+        }
+    </script>
+    <script src="payment.js"></script>
+    <script>
+      const cartButton = document.getElementById('cart-button');
+      const container = document.querySelector('.container');
+
+      cartButton.addEventListener('click', () => {
+        container.style.display = 'block';
+      });
+    </script>
+  </body>
+</html>
